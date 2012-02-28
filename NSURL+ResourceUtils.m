@@ -35,7 +35,7 @@
 
 @implementation NSURL (ResourceUtils)
 
-+ (id) URLWithResourceName:(NSString *)key
++ (NSURL*) URLWithResourceName:(NSString *)key
 {
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:PLIST ofType:@"plist"];
     NSDictionary *plistData = [NSDictionary dictionaryWithContentsOfFile:plistPath];

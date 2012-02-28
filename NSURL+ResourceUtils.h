@@ -29,6 +29,6 @@
 
 @interface NSURL (ResourceUtils)
 
-+ (id) URLWithResourceName:(NSString *)key;
++ (NSURL*) URLWithResourceName:(NSString *)key;
 
 @end
