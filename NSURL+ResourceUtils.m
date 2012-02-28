@@ -39,7 +39,7 @@
 {
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:PLIST ofType:@"plist"];
     NSDictionary *plistData = [NSDictionary dictionaryWithContentsOfFile:plistPath];
-    return [NSURL URLWithString:[plistData objectForKey:key]];
+    return (__bridge NSURL*)([NSURL URLWithString:[plistData objectForKey:key]]);
 }
 
 @end
