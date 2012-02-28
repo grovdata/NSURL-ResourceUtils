@@ -27,7 +27,9 @@ Then;
 Note
 ================================
 
-The class relies on the DEBUG flag to be set for debug builds.
+The method relies on the DEBUG flag to be set for debug builds. If
+DEBUG is not set, it will use "Release.plist" instead. Of course,
+you can modify this to your own needs.
 
 Copyright
 --------------------------------
